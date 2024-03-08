@@ -644,7 +644,7 @@ var yellow_breakquiz={
     data.trial_type = "yellow_breakquiz"
     if(response == '{"BQ03":"B"}') {
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [correctforyellowbreak,blr_memory],
+        timeline: [correctforyellowbreak,blr01_memory],
       }, jsPsych.resumeExperiment)
     }else{
       jsPsych.addNodeToEndOfTimeline({
@@ -783,46 +783,46 @@ function continue_yellow_memory(yellow_val,curr_yellow_memory,yellow_background)
 //yellow room end
 
 //baselinerecgonition start
-var curr_blr_memory=0
-var n_blr_memory = 3
+var curr_blr01_memory=0
+var n_blr01_memory = 3
 
 
-var blr_memory = {
+var blr01_memory = {
   type: 'image-keyboard-response',
   choices: ['Y', 'N'],
   stimulus_height: 250,
   stimulus_duration: 3000,
   trial_duration: 3000,
   response_ends_trial: false,
-  stimulus:create_blr_trial(),
-  prompt:create_memory_stimulus(blr_val,curr_blr_memory,blr_background),
+  stimulus:create_blr01_trial(),
+  prompt:create_memory_stimulus(blr01_val,curr_blr01_memory,blr01_background),
   on_finish: function (data) {
-    data.trial_type = 'blr_memory';
+    data.trial_type = 'blr01_memory';
     sfa=data.key_press
-    curr_blr_memory=curr_blr_memory+1
-    continue_blr_memory(blr_val,curr_blr_memory,blr_background)
-    if(sfa == '89' && curr_blr_memory<=n_blr_memory) {
+    curr_blr01_memory=curr_blr01_memory+1
+    continue_blr01_memory(blr01_val,curr_blr01_memory,blr01_background)
+    if(sfa == '89' && curr_blr01_memory<=n_blr01_memory) {
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [blr_thecrossant,blr_memory],
+        timeline: [blr01_thecrossant,blr01_memory],
       }, jsPsych.resumeExperiment)
-    }else if(sfa == '78'&& curr_blr_memory<=n_blr_memory){
+    }else if(sfa == '78'&& curr_blr01_memory<=n_blr01_memory){
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [blr_thecrossant,blr_memory],
+        timeline: [blr01_thecrossant,blr01_memory],
       }, jsPsych.resumeExperiment)
-    }else if(sfa == '89' && curr_blr_memory>n_blr_memory) {
+    }else if(sfa == '89' && curr_blr01_memory>n_blr01_memory) {
       jsPsych.addNodeToEndOfTimeline({
         timeline: [thank_you],
       }, jsPsych.resumeExperiment)
-    }else if(sfa == '78'&& curr_blr_memory>n_blr_memory){
+    }else if(sfa == '78'&& curr_blr01_memory>n_blr01_memory){
       jsPsych.addNodeToEndOfTimeline({
         timeline: [thank_you],
       }, jsPsych.resumeExperiment)
-    }else if(warning<=3 && curr_blr_memory<=n_blr_memory){
+    }else if(warning<=3 && curr_blr01_memory<=n_blr01_memory){
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [blr_theredx,blr_memory],
+        timeline: [blr01_theredx,blr01_memory],
       }, jsPsych.resumeExperiment)
       warning=warning+1
-    }else if(warning<=3 && curr_blr_memory>n_blr_memory){
+    }else if(warning<=3 && curr_blr01_memory>n_blr01_memory){
       jsPsych.addNodeToEndOfTimeline({
         timeline: [thank_you],
       }, jsPsych.resumeExperiment)
@@ -834,12 +834,12 @@ var blr_memory = {
   }
 }
 
-function continue_blr_memory(blr_val,curr_blr_memory,blr_background){
-  blr_memory.stimulus=create_blr_trial()
-  blr_memory.prompt=create_memory_stimulus(blr_val,curr_blr_memory,blr_background)
+function continue_blr01_memory(blr01_val,curr_blr01_memory,blr01_background){
+  blr01_memory.stimulus=create_blr01_trial()
+  blr01_memory.prompt=create_memory_stimulus(blr01_val,curr_blr01_memory,blr01_background)
 }  
 
-var blr_thecrossant= {
+var blr01_thecrossant= {
   type: 'image-keyboard-response',
   choices: jsPsych.NO_KEYS,
   stimulus_height: 100,
@@ -848,10 +848,10 @@ var blr_thecrossant= {
   trial_duration: 500,
   response_ends_trial: false,
   stimulus:create_memory_ten(),
-  prompt:parse("<br><br><style>body {background-color: %s;}</style>",blr_background),
+  prompt:parse("<br><br><style>body {background-color: %s;}</style>",blr01_background),
 }
 
-var blr_theredx= {
+var blr01_theredx= {
   type: 'image-keyboard-response',
   choices: jsPsych.NO_KEYS,
   stimulus_height: 100,
@@ -860,7 +860,7 @@ var blr_theredx= {
   trial_duration: 500,
   response_ends_trial: false,
   stimulus:create_memory_redx(),
-  prompt:parse("<br><br><style>body {background-color: %s;}</style>",blr_background),
+  prompt:parse("<br><br><style>body {background-color: %s;}</style>",blr01_background),
 }
 
 //baselinerecognition end
@@ -877,7 +877,7 @@ var thank_you = {
   }
 }
 timeline.push(welcome)
-timeline.push(instruct01)
+timeline.push(blr01_memory)
 
 
 jsPsych.init({
