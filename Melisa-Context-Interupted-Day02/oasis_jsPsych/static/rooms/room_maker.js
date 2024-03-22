@@ -32,7 +32,15 @@ function create_prac_trial() {
 function create_red_trial() {
   return parse("../static/images/Red_Fabric.jpg")
 }
-function create_blr_trial() {
+function create_blr01_trial() {
+  return parse("")
+}
+
+function create_blr02_trial() {
+  return parse("")
+}
+
+function create_blr03_trial() {
   return parse("")
 }
 

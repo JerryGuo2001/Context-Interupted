@@ -105,7 +105,7 @@ var instruct01={
   type: 'html-keyboard-response',
   choices: ['space'],
   response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p>Task Instructions (1/11)</p><p>The next few slides are important instructions for completing this part of the task.</p><p>There will be a comprehension quiz at the end of these instructions to make sure you know how to complete the task.</p><p>[press the spacebar to continue]</p>",
+  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p>Task Instructions (1/4)</p><p>Welcome to the last part of this task. The next few slides are important instructions for completing this task. Press the spacebar to continue.</p><p>[press the spacebar to continue]</p>",
   on_finish: function(data) {
     data.trial_type = "instruct01"
     jsPsych.addNodeToEndOfTimeline({
@@ -118,7 +118,7 @@ var instruct02={
   type: 'html-keyboard-response',
   choices: ['space'],
   response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (2/11)</p><p>Before beginning, please maximize this browser.</p><p>This experiment is designed to be taken in a single sitting, meaning you must complete the task end-to-end once you start.</p><p>Additionally, please do not navigate away from this screen while completing this task.</p><p>[press the spacebar to continue]</p>",
+  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (2/4)</p><p>In this last part, you will be asked if you recognize words you may have seen in yesterday's task.</p><p>[press the spacebar to continue]</p>",
   on_finish: function(data) {
     data.trial_type = "instruct02"
     jsPsych.addNodeToEndOfTimeline({
@@ -131,7 +131,7 @@ var instruct03={
   type: 'html-keyboard-response',
   choices: ['space'],
   response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (3/11)</p><p>In this task, you will see object words paired with colors.</p><p>Try to imagine the word in the color it is paired with.</p><p>Once you have tried, press the<b> Y </b>key if you were able to or the<b> N </b>if not.</p><p>[press the spacebar to continue]</p>",
+  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (3/4)</p><p>You will respond with either the  Y key for 'yes', or the N key for 'no'. You will have 3 seconds to respond. Only the first answer you enter will be recorded.</p><p>[press the spacebar to continue]</p>",
   on_finish: function(data) {
     data.trial_type = "instruct03"
     jsPsych.addNodeToEndOfTimeline({
@@ -143,310 +143,16 @@ var instruct04={
   type: 'html-keyboard-response',
   choices: ['space'],
   response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (4/11)</p><p>It is important you respond to each word and color pair, and respond as soon as you have tried imagining the word as the color it is paired with.</p><p>You have a maximum of three seconds to respond, and can respond only once.</p><p>The word and color pair will remain on the screen for the entire three seconds, even if you respond before the time is up.</p><p>[press the spacebar to continue]</p>",
+  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (4/4)</p><p>You will get a few one-minute breaks throughout the task, and after the breaks are over, the task will start again automatically.</p><p>When you are ready, press the spacebar to begin.</p>",
   on_finish: function(data) {
     data.trial_type = "instruct04"
     jsPsych.addNodeToEndOfTimeline({
-      timeline: [instruct05],
-    }, jsPsych.resumeExperiment)
-  }
-}
-var instruct05={
-  type: 'html-keyboard-response',
-  choices: ['space'],
-  response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (5/11)</p><p>You will see the following symbol flash in the center of the screen if you successfully respond within three seconds:</p><img src='../static/images/isi.png' width='300' height='300'><p>[press the spacebar to continue]</p>",
-  on_finish: function(data) {
-    data.trial_type = "instruct05"
-    jsPsych.addNodeToEndOfTimeline({
-      timeline: [instruct06],
-    }, jsPsych.resumeExperiment)
-  }
-}
-var instruct06={
-  type: 'html-keyboard-response',
-  choices: ['space'],
-  response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (6/11)</p><p>You will see the following symbol flash in the center of the screen if you do not respond in three seconds, to let you know the trial was missed. If you miss more than 3 trials the experiment will end and you will be compensated for your time.</p><img src='../static/images/redx.jpg' width='300' height='300'><p>[press the spacebar to continue]</p>",
-  on_finish: function(data) {
-    data.trial_type = "instruct06"
-    jsPsych.addNodeToEndOfTimeline({
-      timeline: [instruct07],
-    }, jsPsych.resumeExperiment)
-  }
-}
-var instruct07={
-  type: 'html-keyboard-response',
-  choices: ['space'],
-  response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (7/11)</p><p>You will get 2 one-minute breaks throughout the task, and a two-minute break toward the end.</p><p>After each break, you will complete a short task where you will see a row of arrows, and need to indicate which direction the center arrow is pointing in. Here is an example:</p><img src='../static/images/ror01.png'><p>[press the spacebar to continue]</p>",
-  on_finish: function(data) {
-    data.trial_type = "instruct07"
-    jsPsych.addNodeToEndOfTimeline({
-      timeline: [instruct08],
-    }, jsPsych.resumeExperiment)
-  }
-}
-
-var instruct08={
-  type: 'html-keyboard-response',
-  choices: ['space'],
-  response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (8/11)</p><p>You will indicate which direction the center arrow is pointing in by responding with either the<b> right </b>or<b> left </b>. You will only have 2 seconds to respond once the image shows up.</p><p>[press the spacebar to continue]</p>",
-  on_finish: function(data) {
-    data.trial_type = "instruct08"
-    jsPsych.addNodeToEndOfTimeline({
-      timeline: [instruct09],
-    }, jsPsych.resumeExperiment)
-  }
-}
-
-var instruct09={
-  type: 'html-keyboard-response',
-  choices: ['space'],
-  response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (9/11)</p><p>You will get to practice a few times before the real task begins.</p><p>You will be tested on your memory of these words at the end of this task, and again 24 hours from now, so it is important you are not distracted.</p><p>Please silence your cell phone, make sure you are in a quiet space, and pay close attention.</p><p>[press the spacebar to continue]</p>",
-  on_finish: function(data) {
-    data.trial_type = "instruct09"
-    jsPsych.addNodeToEndOfTimeline({
-      timeline: [instruct10],
-    }, jsPsych.resumeExperiment)
-  }
-}
-var instruct10={
-  type: 'html-keyboard-response',
-  choices: ['space'],
-  response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (10/11)</p><p>In summary: you will try to imagine a series of object words as the colors they are paired with.</p><p>If you are able to, press the<b> Y </b>key. If you can't, press the<b> N </b>key.</p><p>Remember to enter your response as soon as you have tried imagining the word as the color it is paired with! You have three seconds to respond to each pair.</p><p>[press the spacebar to continue]</p>",
-  on_finish: function(data) {
-    data.trial_type = "instruct10"
-    jsPsych.addNodeToEndOfTimeline({
-      timeline: [instruct11],
-    }, jsPsych.resumeExperiment)
-  }
-}
-var instruct11={
-  type: 'html-keyboard-response',
-  choices: ['space'],
-  response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Task Instructions (11/11)</p><p>You will now answer a few questions to confirm that you understand the instructions. Each question will remain on the screen until you press the correct key. </p><p>[press the spacebar to continue]</p>",
-  on_finish: function(data) {
-    data.trial_type = "instruct11"
-    jsPsych.addNodeToEndOfTimeline({
-      timeline: [checkquiz01],
+      timeline: [blr01_memory],
     }, jsPsych.resumeExperiment)
   }
 }
 
 //Instruction end here
-
-//checkquiz start here
-
-var checkquiz01={
-  type: 'html-keyboard-response',
-  choices: ['Y', 'N'],
-  response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p></p><p>Comprehension Quiz (1/4)</p><p>Enter the key you should press if you are able to imagine the word as the color it is paired with:</p><p>The<b> Y </b>key</p><p>or</p><p>The<b> N </b>key</p>",
-  on_finish: function(data) {
-    data.trial_type = "checkquiz01"
-    if(data.key_press == '89') {
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [correctforcheck01,checkquiz02],
-      }, jsPsych.resumeExperiment)
-    }else if(data.key_press == '78'){
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [wrongforcheck,checkquiz01],
-      }, jsPsych.resumeExperiment)
-    }
-  }
-}
-var correctforcheck01={
-  type: 'html-keyboard-response',
-  choices: jsPsych.NO_KEYS,
-  stimulus_height: 250,
-  stimulus_duration: 1500,
-  trial_duration: 1500,
-  response_ends_trial: false,
-  stimulus:'<p>correct = Y</p>',
-}
-var wrongforcheck={
-  type: 'html-keyboard-response',
-  choices: jsPsych.NO_KEYS,
-  stimulus_height: 250,
-  stimulus_duration: 1500,
-  trial_duration: 1500,
-  response_ends_trial: false,
-  stimulus:'<p>Incorrect</p>',
-}
-
-var checkquiz02={
-  type: 'survey-html-form',
-  html:"<div style='text-align:left;'><p>Comprehension Quiz (2/4)</p><p>How many seconds do you have to respond to each trial?</p><input type='radio' name='Q2' value='A' checked> a = 1 second<br><input type='radio' name='Q2' value='B'> b = 2 seconds<br><input type='radio' name='Q2' value='C'> c = 3 seconds<br> <br><br><br></div>",
-  on_finish: function(data) {
-    var response=data.responses
-    data.trial_type = "checkquiz02"
-    if(response == '{"Q2":"C"}') {
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [correctforcheck02,checkquiz03],
-      }, jsPsych.resumeExperiment)
-    }else{
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [wrongforcheck,checkquiz02],
-      }, jsPsych.resumeExperiment)
-    }
-  }
-}
-
-var correctforcheck02={
-  type: 'html-keyboard-response',
-  choices: jsPsych.NO_KEYS,
-  stimulus_height: 250,
-  stimulus_duration: 1500,
-  trial_duration: 1500,
-  response_ends_trial: false,
-  stimulus:'<p>correct = c</p>',
-}
-
-var checkquiz03={
-  type: 'survey-html-form',
-  html:"<div style='text-align:left;'><p>Comprehension Quiz (3/4)</p><p>When will you return to Prolific to be tested on your memory of today's task?</p><input type='radio' name='Q3' value='A' checked> a = in 12 hours<br><input type='radio' name='Q3' value='B'> b = in 24 hours<br><input type='radio' name='Q3' value='C'> c = in 48 hours<br> <br><br><br></div>",
-  on_finish: function(data) {
-    var response=data.responses
-    data.trial_type = "checkquiz03"
-    if(response == '{"Q3":"B"}') {
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [correctforcheck03,checkquiz04],
-      }, jsPsych.resumeExperiment)
-    }else{
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [wrongforcheck,checkquiz03],
-      }, jsPsych.resumeExperiment)
-    }
-  }
-}
-var correctforcheck03={
-  type: 'html-keyboard-response',
-  choices: jsPsych.NO_KEYS,
-  stimulus_height: 250,
-  stimulus_duration: 1500,
-  trial_duration: 1500,
-  response_ends_trial: false,
-  stimulus:'<p>correct = b</p>',
-}
-
-var checkquiz04={
-  type: 'survey-html-form',
-  html:"<div style='text-align:left;'><p>Comprehension Quiz (4/4)</p><p>When should you respond to the word and color pairs with your keyboard?</p><input type='radio' name='Q4' value='A' checked> a = As soon as you have tried to imagine the word as the color<br><input type='radio' name='Q4' value='B'> b = When three seconds have passed<br><input type='radio' name='Q4' value='C'> c = When they first appear on the screen<br> <br><br><br></div>",
-  on_finish: function(data) {
-    var response=data.responses
-    data.trial_type = "checkquiz04"
-    if(response == '{"Q4":"A"}') {
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [correctforcheck04,checkforquizcomplete],
-      }, jsPsych.resumeExperiment)
-    }else{
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [wrongforcheck,checkquiz04],
-      }, jsPsych.resumeExperiment)
-    }
-  }
-}
-var correctforcheck04={
-  type: 'html-keyboard-response',
-  choices: jsPsych.NO_KEYS,
-  stimulus_height: 250,
-  stimulus_duration: 1500,
-  trial_duration: 1500,
-  response_ends_trial: false,
-  stimulus:'<p>correct = a</p>',
-}
-
-var checkforquizcomplete={
-  type: 'html-keyboard-response',
-  choices: ['space'],
-  response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p>Comprehension Quiz Complete!</p><p>You have successfully completed the comprehension quiz.</p><p>You will now move on to some practice trials, which have the same format as described in the instructions.</p><p>[press the spacebar to continue]</p>",
-  on_finish: function(data) {
-    data.trial_type = "checkforquizcomplete"
-    jsPsych.addNodeToEndOfTimeline({
-      timeline: [prac_memory],
-    }, jsPsych.resumeExperiment)
-  }
-}
-
-//checkquiz end here
-
-//practice quiz begin
-
-
-var curr_prac_memory=0
-var n_prac_memory = 3
-
-var prac_memory = {
-  type: 'image-keyboard-response',
-  choices: ['Y', 'N'],
-  stimulus_height: 250,
-  stimulus_duration: 3000,
-  trial_duration: 3000,
-  response_ends_trial: false,
-  stimulus:create_prac_trial(),
-  prompt:create_memory_stimulus(prac_val,curr_prac_memory,prac_background),
-  on_finish: function (data) {
-    data.trial_type = 'prac_memory';
-    sfa=data.key_press
-    curr_prac_memory=curr_prac_memory+1
-    continue_prac_memory(prac_val,curr_prac_memory,prac_background)
-    if(sfa == '89' && curr_prac_memory<=n_prac_memory) {
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [thecrossant,prac_memory],
-      }, jsPsych.resumeExperiment)
-    }else if(sfa == '78'&& curr_prac_memory<=n_prac_memory){
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [thecrossant,prac_memory],
-      }, jsPsych.resumeExperiment)
-    }else if(sfa == '89' && curr_prac_memory>n_prac_memory) {
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [praccomple],
-      }, jsPsych.resumeExperiment)
-    }else if(sfa == '78'&& curr_prac_memory>n_prac_memory){
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [praccomple],
-      }, jsPsych.resumeExperiment)
-    }else if(warning<=3 && curr_prac_memory<=n_prac_memory){
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [theredx,prac_memory],
-      }, jsPsych.resumeExperiment)
-    }else if(warning<=3 && curr_prac_memory>n_prac_memory){
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [praccomple],
-      }, jsPsych.resumeExperiment)
-    }else if(warning>3){
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [warning_toolate],
-      }, jsPsych.resumeExperiment)
-    }
-  }
-}
-
-function continue_prac_memory(prac_val,curr_prac_memory,prac_background){
-  prac_memory.stimulus=create_prac_trial()
-  prac_memory.prompt=create_memory_stimulus(prac_val,curr_prac_memory,prac_background)
-}  
-
-var praccomple={
-  type: 'html-keyboard-response',
-  choices: ['space'],
-  response_ends_trial: true,
-  stimulus:"<div style='margin-left:300px ;margin-right: 300px ;text-justify: auto'><p>Practice Complete!</p><p>You have successfully completed the practice trials.</p><p>You will now move on to the actual experiment, which will have exactly the same format, but with more trials.</p><p>Remember to respond as soon as you try to imagine the object word as the color it is paired with.</p><p>[press the spacebar to continue]</p>",
-  on_finish: function(data) {
-    data.trial_type = "praccomple"
-    jsPsych.addNodeToEndOfTimeline({
-      timeline: [blue_memory],
-    }, jsPsych.resumeExperiment)
-  }
-}
-
-//practice quiz end here
 
 //welcome page
 var welcome = {
@@ -486,63 +192,7 @@ var warning_toolate={
   }
 }
 
-
-// blue
-var curr_blue_memory=0
-var n_blue_memory = 3
-
-
-var blue_memory = {
-  type: 'image-keyboard-response',
-  choices: ['Y', 'N'],
-  stimulus_height: 250,
-  stimulus_duration: 3000,
-  trial_duration: 3000,
-  response_ends_trial: false,
-  stimulus:create_blue_trial(),
-  prompt:create_memory_stimulus(blue_val,curr_blue_memory,blue_background),
-  on_finish: function (data) {
-    data.trial_type = 'blue_memory';
-    sfa=data.key_press
-    curr_blue_memory=curr_blue_memory+1
-    continue_blue_memory(blue_val,curr_blue_memory,blue_background)
-    if(sfa == '89' && curr_blue_memory<=n_blue_memory) {
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [thecrossant,blue_memory],
-      }, jsPsych.resumeExperiment)
-    }else if(sfa == '78'&& curr_blue_memory<=n_blue_memory){
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [thecrossant,blue_memory],
-      }, jsPsych.resumeExperiment)
-    }else if(sfa == '89' && curr_blue_memory>n_blue_memory) {
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [oneminbk,blue_breakquiz],
-      }, jsPsych.resumeExperiment)
-    }else if(sfa == '78'&& curr_blue_memory>n_blue_memory){
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [oneminbk,blue_breakquiz],
-      }, jsPsych.resumeExperiment)
-    }else if(warning<=3 && curr_blue_memory<=n_blue_memory){
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [theredx,blue_memory],
-      }, jsPsych.resumeExperiment)
-      warning=warning+1
-    }else if(warning<=3 && curr_blue_memory>n_blue_memory){
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [oneminbk,blue_breakquiz],
-      }, jsPsych.resumeExperiment)
-    }else if(warning>3){
-      jsPsych.addNodeToEndOfTimeline({
-        timeline: [warning_toolate],
-      }, jsPsych.resumeExperiment)
-    }
-  }
-}
-
-function continue_blue_memory(blue_val,curr_blue_memory,blue_background){
-  blue_memory.stimulus=create_blue_trial()
-  blue_memory.prompt=create_memory_stimulus(blue_val,curr_blue_memory,blue_background)
-}  
+blue_background='white';
 
 var thecrossant= {
   type: 'image-keyboard-response',
@@ -665,48 +315,50 @@ var correctforyellowbreak={
 
 //one minute break
 
-//red room begin
-var curr_red_memory=0
-var n_red_memory = 3
+//part 03 part
 
-var red_memory = {
+var curr_blr03_memory=0
+var n_blr03_memory = 3
+
+
+var blr03_memory = {
   type: 'image-keyboard-response',
   choices: ['Y', 'N'],
   stimulus_height: 250,
   stimulus_duration: 3000,
   trial_duration: 3000,
   response_ends_trial: false,
-  stimulus:create_red_trial(),
-  prompt:create_memory_stimulus(red_val,curr_red_memory,red_background),
+  stimulus:create_blr03_trial(),
+  prompt:create_memory_stimulus(blr03_val,curr_blr03_memory,blr03_background),
   on_finish: function (data) {
-    data.trial_type = 'red_memory';
+    data.trial_type = 'blr03_memory';
     sfa=data.key_press
-    curr_red_memory=curr_red_memory+1
-    continue_red_memory(red_val,curr_red_memory,red_background)
-    if(sfa == '89' && curr_red_memory<=n_red_memory) {
+    curr_blr03_memory=curr_blr03_memory+1
+    continue_blr03_memory(blr03_val,curr_blr03_memory,blr03_background)
+    if(sfa == '89' && curr_blr03_memory<=n_blr03_memory) {
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [thecrossant,red_memory],
+        timeline: [blr03_thecrossant,blr03_memory],
       }, jsPsych.resumeExperiment)
-    }else if(sfa == '78'&& curr_red_memory<=n_red_memory){
+    }else if(sfa == '78'&& curr_blr03_memory<=n_blr03_memory){
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [thecrossant,red_memory],
+        timeline: [blr03_thecrossant,blr03_memory],
       }, jsPsych.resumeExperiment)
-    }else if(sfa == '89' && curr_red_memory>n_red_memory) {
+    }else if(sfa == '89' && curr_blr03_memory>n_blr03_memory) {
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [oneminbk,red_breakquiz],
+        timeline: [thank_you],
       }, jsPsych.resumeExperiment)
-    }else if(sfa == '78'&& curr_red_memory>n_red_memory){
+    }else if(sfa == '78'&& curr_blr03_memory>n_blr03_memory){
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [oneminbk,red_breakquiz],
+        timeline: [thank_you],
       }, jsPsych.resumeExperiment)
-    }else if(warning<=3 && curr_red_memory<=n_red_memory){
+    }else if(warning<=3 && curr_blr03_memory<=n_blr03_memory){
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [theredx,red_memory],
+        timeline: [blr03_theredx,blr03_memory],
       }, jsPsych.resumeExperiment)
       warning=warning+1
-    }else if(warning<=3 && curr_red_memory>n_red_memory){
+    }else if(warning<=3 && curr_blr03_memory>n_blr03_memory){
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [oneminbk,red_breakquiz],
+        timeline: [thank_you],
       }, jsPsych.resumeExperiment)
     }else if(warning>3){
       jsPsych.addNodeToEndOfTimeline({
@@ -716,56 +368,80 @@ var red_memory = {
   }
 }
 
-function continue_red_memory(red_val,curr_red_memory,red_background){
-  red_memory.stimulus=create_red_trial()
-  red_memory.prompt=create_memory_stimulus(red_val,curr_red_memory,red_background)
+function continue_blr03_memory(blr03_val,curr_blr03_memory,blr03_background){
+  blr03_memory.stimulus=create_blr03_trial()
+  blr03_memory.prompt=create_memory_stimulus(blr03_val,curr_blr03_memory,blr03_background)
 }  
 
-//red room end
+var blr03_thecrossant= {
+  type: 'image-keyboard-response',
+  choices: jsPsych.NO_KEYS,
+  stimulus_height: 100,
+  stimulus_width: 100,
+  stimulus_duration: 500,
+  trial_duration: 500,
+  response_ends_trial: false,
+  stimulus:create_memory_ten(),
+  prompt:parse("<br><br><style>body {background-color: %s;}</style>",blr03_background),
+}
 
-//yellow room start
+var blr03_theredx= {
+  type: 'image-keyboard-response',
+  choices: jsPsych.NO_KEYS,
+  stimulus_height: 100,
+  stimulus_width: 100,
+  stimulus_duration: 500,
+  trial_duration: 500,
+  response_ends_trial: false,
+  stimulus:create_memory_redx(),
+  prompt:parse("<br><br><style>body {background-color: %s;}</style>",blr03_background),
+}
 
-var curr_yellow_memory=0
-var n_yellow_memory = 3
+//part 03 end
 
-var yellow_memory = {
+//part 02 start
+var curr_blr02_memory=0
+var n_blr02_memory = 3
+
+
+var blr02_memory = {
   type: 'image-keyboard-response',
   choices: ['Y', 'N'],
   stimulus_height: 250,
   stimulus_duration: 3000,
   trial_duration: 3000,
   response_ends_trial: false,
-  stimulus:create_yellow_trial(),
-  prompt:create_memory_stimulus(yellow_val,curr_yellow_memory,yellow_background),
+  stimulus:create_blr02_trial(),
+  prompt:create_memory_stimulus(blr02_val,curr_blr02_memory,blr02_background),
   on_finish: function (data) {
-    data.trial_type = 'yellow_memory';
+    data.trial_type = 'blr02_memory';
     sfa=data.key_press
-    curr_yellow_memory=curr_yellow_memory+1
-    continue_yellow_memory(yellow_val,curr_yellow_memory,yellow_background)
-    if(sfa == '89' && curr_yellow_memory<=n_yellow_memory) {
+    curr_blr02_memory=curr_blr02_memory+1
+    continue_blr02_memory(blr02_val,curr_blr02_memory,blr02_background)
+    if(sfa == '89' && curr_blr02_memory<=n_blr02_memory) {
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [thecrossant,yellow_memory],
+        timeline: [blr02_thecrossant,blr02_memory],
       }, jsPsych.resumeExperiment)
-    }else if(sfa == '78'&& curr_yellow_memory<=n_yellow_memory){
+    }else if(sfa == '78'&& curr_blr02_memory<=n_blr02_memory){
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [thecrossant,yellow_memory],
+        timeline: [blr02_thecrossant,blr02_memory],
       }, jsPsych.resumeExperiment)
-    }else if(sfa == '89' && curr_yellow_memory>n_yellow_memory) {
+    }else if(sfa == '89' && curr_blr02_memory>n_blr02_memory) {
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [oneminbk,yellow_breakquiz],
+        timeline: [oneminbk,blr03_memory],
       }, jsPsych.resumeExperiment)
-    }else if(sfa == '78'&& curr_yellow_memory>n_yellow_memory){
+    }else if(sfa == '78'&& curr_blr02_memory>n_blr02_memory){
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [oneminbk,yellow_breakquiz],
+        timeline: [oneminbk,blr03_memory],
       }, jsPsych.resumeExperiment)
-    }else if(warning<=3 && curr_yellow_memory<=n_yellow_memory){
+    }else if(warning<=3 && curr_blr02_memory<=n_blr02_memory){
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [theredx,yellow_memory],
+        timeline: [blr02_theredx,blr02_memory],
       }, jsPsych.resumeExperiment)
       warning=warning+1
-    }else if(warning<=3 && curr_yellow_memory>n_yellow_memory){
+    }else if(warning<=3 && curr_blr02_memory>n_blr02_memory){
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [oneminbk,yellow_breakquiz],
+        timeline: [oneminbk,blr03_memory],
       }, jsPsych.resumeExperiment)
     }else if(warning>3){
       jsPsych.addNodeToEndOfTimeline({
@@ -775,14 +451,38 @@ var yellow_memory = {
   }
 }
 
-function continue_yellow_memory(yellow_val,curr_yellow_memory,yellow_background){
-  yellow_memory.stimulus=create_yellow_trial()
-  yellow_memory.prompt=create_memory_stimulus(yellow_val,curr_yellow_memory,yellow_background)
+function continue_blr02_memory(blr02_val,curr_blr02_memory,blr02_background){
+  blr02_memory.stimulus=create_blr02_trial()
+  blr02_memory.prompt=create_memory_stimulus(blr02_val,curr_blr02_memory,blr02_background)
 }  
 
-//yellow room end
+var blr02_thecrossant= {
+  type: 'image-keyboard-response',
+  choices: jsPsych.NO_KEYS,
+  stimulus_height: 100,
+  stimulus_width: 100,
+  stimulus_duration: 500,
+  trial_duration: 500,
+  response_ends_trial: false,
+  stimulus:create_memory_ten(),
+  prompt:parse("<br><br><style>body {background-color: %s;}</style>",blr02_background),
+}
 
-//baselinerecgonition start
+var blr02_theredx= {
+  type: 'image-keyboard-response',
+  choices: jsPsych.NO_KEYS,
+  stimulus_height: 100,
+  stimulus_width: 100,
+  stimulus_duration: 500,
+  trial_duration: 500,
+  response_ends_trial: false,
+  stimulus:create_memory_redx(),
+  prompt:parse("<br><br><style>body {background-color: %s;}</style>",blr02_background),
+}
+
+//02 part end
+
+//01 part start
 var curr_blr01_memory=0
 var n_blr01_memory = 3
 
@@ -811,11 +511,11 @@ var blr01_memory = {
       }, jsPsych.resumeExperiment)
     }else if(sfa == '89' && curr_blr01_memory>n_blr01_memory) {
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [thank_you],
+        timeline: [oneminbk,blr02_memory],
       }, jsPsych.resumeExperiment)
     }else if(sfa == '78'&& curr_blr01_memory>n_blr01_memory){
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [thank_you],
+        timeline: [oneminbk,blr02_memory],
       }, jsPsych.resumeExperiment)
     }else if(warning<=3 && curr_blr01_memory<=n_blr01_memory){
       jsPsych.addNodeToEndOfTimeline({
@@ -824,7 +524,7 @@ var blr01_memory = {
       warning=warning+1
     }else if(warning<=3 && curr_blr01_memory>n_blr01_memory){
       jsPsych.addNodeToEndOfTimeline({
-        timeline: [thank_you],
+        timeline: [oneminbk,blr02_memory],
       }, jsPsych.resumeExperiment)
     }else if(warning>3){
       jsPsych.addNodeToEndOfTimeline({
@@ -863,7 +563,7 @@ var blr01_theredx= {
   prompt:parse("<br><br><style>body {background-color: %s;}</style>",blr01_background),
 }
 
-//baselinerecognition end
+//01 part end
 
 // final thank you
 var thank_you = {
@@ -877,7 +577,7 @@ var thank_you = {
   }
 }
 timeline.push(welcome)
-timeline.push(blr01_memory)
+timeline.push(instruct01)
 
 
 jsPsych.init({
