@@ -7,5 +7,5 @@ var blr03_scene = [""]
 
 var redx=['redx.jpg']
 
-var blr03_val = ['pan', 'lagoon', 'knife', 'sword', 'canvas', 'bell', 'kazoo', 'wine', 'ladder', 'cottage', 'angel', 'jawbone', 'boat', 'bull', 'goulash', 'anaconda', 'mantle', 'tabasco', 'statue', 'soot', 'award', 'heater', 'boulder', 'seed', 'plastic', 'football', 'carpet', 'blade', 'pheasant']
+var blr03_val = ['Plasma', 'Oak', 'Coal', 'Saber', 'River', 'Orange', 'Toner', 'Cow', 'Lizard', 'Animal', 'Rod', 'Hen', 'Baboon', 'Ice', 'Tadpole', 'Whale', 'Ginseng', 'Raft', 'Revolver', 'Wildcat', 'Scone', 'Clock', 'Cuckoo', 'Island', 'Dirt', 'Pencil', 'Potato', 'Badge', 'Gazette', 'Ledge']
 

@@ -225,8 +225,9 @@ var oneminbk= {
   type: 'html-keyboard-response',
   choices: jsPsych.NO_KEYS,
   stimulus_height: 250,
-  stimulus_duration: 6000,
-  trial_duration: 6000,
+  stimulus:'<h1>BreakTime!</h1>',
+  stimulus_duration: 60000,
+  trial_duration: 60000,
   response_ends_trial: false,
   stimulus:"<h1>BreakTime!</h1>"
 }
@@ -318,7 +319,7 @@ var correctforyellowbreak={
 //part 03 part
 
 var curr_blr03_memory=0
-var n_blr03_memory = 3
+var n_blr03_memory = 29
 
 
 var blr03_memory = {
@@ -401,7 +402,7 @@ var blr03_theredx= {
 
 //part 02 start
 var curr_blr02_memory=0
-var n_blr02_memory = 3
+var n_blr02_memory = 29
 
 
 var blr02_memory = {
@@ -484,7 +485,7 @@ var blr02_theredx= {
 
 //01 part start
 var curr_blr01_memory=0
-var n_blr01_memory = 3
+var n_blr01_memory = 29
 
 
 var blr01_memory = {

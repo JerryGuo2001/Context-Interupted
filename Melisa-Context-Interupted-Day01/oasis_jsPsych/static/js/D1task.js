@@ -489,7 +489,7 @@ var warning_toolate={
 
 // blue
 var curr_blue_memory=0
-var n_blue_memory = 3
+var n_blue_memory = 79
 
 
 var blue_memory = {
@@ -574,9 +574,10 @@ var theredx= {
 var oneminbk= {
   type: 'html-keyboard-response',
   choices: jsPsych.NO_KEYS,
+  stimulus:'<h1>BreakTime</h1>',
   stimulus_height: 250,
-  stimulus_duration: 6000,
-  trial_duration: 6000,
+  stimulus_duration: 60000,
+  trial_duration: 60000,
   response_ends_trial: false,
   stimulus:"<h1>BreakTime!</h1>"
 }
@@ -667,7 +668,7 @@ var correctforyellowbreak={
 
 //red room begin
 var curr_red_memory=0
-var n_red_memory = 3
+var n_red_memory = 79
 
 var red_memory = {
   type: 'image-keyboard-response',
@@ -726,7 +727,7 @@ function continue_red_memory(red_val,curr_red_memory,red_background){
 //yellow room start
 
 var curr_yellow_memory=0
-var n_yellow_memory = 3
+var n_yellow_memory = 79
 
 var yellow_memory = {
   type: 'image-keyboard-response',
@@ -784,7 +785,7 @@ function continue_yellow_memory(yellow_val,curr_yellow_memory,yellow_background)
 
 //baselinerecgonition start
 var curr_blr_memory=0
-var n_blr_memory = 3
+var n_blr_memory = 29
 
 
 var blr_memory = {
